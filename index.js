@@ -4,6 +4,9 @@ require('dotenv').config()
 require('./config/database')
 
 
+app.use(express.json())
+
+app.use('/api/task',require('./routes/index'))
 
 
 
